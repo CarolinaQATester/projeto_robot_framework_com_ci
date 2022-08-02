@@ -1,40 +1,5 @@
 *** Keywords ***
-
-Dado que eu acesse o php travels
-    Open Browser  ${URL}  ${Browser}
-    Maximize Browser Window
-
-E realize o cadastro
-    Wait Until Element Is Visible      ${A_Signup}            10
-    Click Element                      ${A_Signup}
-    Wait Until Element Is Visible      ${Input_PrimeiroNome}  10
-    Input Text                         ${Input_PrimeiroNome}  ${PrimeiroNome}
-    Wait Until Element Is Visible      ${Input_UltimoNome}    10
-    Input Text                         ${Input_UltimoNome}    ${UltimoNome}     
-    Wait Until Element Is Visible      ${Input_Telefone}      10
-    Input Text                         ${Input_Telefone}      ${Telefone}  
-    Wait Until Element Is Visible      ${Input_Email}         10
-    Input Text                         ${Input_Email}         ${Email}  
-    Wait Until Element Is Visible      ${Input_Senha}         10 
-    Input Text                         ${Input_Senha}         ${Senha}
-    Wait Until Element Is Visible      ${Button_Cookie}       10
-    Click Element                      ${Button_Cookie}          
-    Wait Until Element Is Visible      ${Button_Signup}       10 
-    Sleep                              2s
-    Run Keyword And Ignore Error       Click Element                      ${Button_Signup}    
-    Click Element                      ${Button_Signup}
-
-E faça o Login
-    Wait Until Element Is Visible  ${A_OpcaoLogin}      10
-    Click Element                  ${A_OpcaoLogin} 
-    Wait Until Element Is Visible  ${Input_EmailLogin}  10
-    Input Text                     ${Input_EmailLogin}  ${Email}
-    Wait Until Element Is Visible  ${Input_SenhaLogin}  10
-    Input Text                     ${Input_SenhaLogin}  ${Senha}
-    Run Keyword And Ignore Error   Wait Until Element Is Visible  ${Button_Cookie}     5
-    Run Keyword And Ignore Error   Click Element                  ${Button_Cookie}
-    Wait Until Element Is Visible  ${Button_Logar}      10
-    Click Element                  ${Button_Logar} 
+ 
 
 Quando eu realizo uma busca de um vôo ida e volta
     Wait Until Element Is Visible  ${a_voos}           10

@@ -8,8 +8,8 @@ ${URL}  https://www.phptravels.net/
 ${Browser}  chrome
 
 #Dados do teste
-${PrimeiroNome}  Edward
-${UltimoNome}    Sheeran
-${Telefone}      555-431
-${Email}         teste@gmail.com
+${PrimeiroNome}  Carolina Helena
+${UltimoNome}    Mesquita
+${Telefone}      61982028127
+${Email}         teste.teste1@gmail.com
 ${Senha}         123456
