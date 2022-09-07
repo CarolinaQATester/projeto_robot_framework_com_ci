@@ -2,14 +2,16 @@
 
 &{Voo}
 #Elementos da página do vôo
-...  Input_IdaeVolta=//input[@id="round-trip"]
-...  Input_Ida=//input[@id="autocomplete"]
-...  Input_Volta=//input[@id="autocomplete2"] 
+...  Input_IdaeVolta=//input[@type="radio"][@id="round-trip"]
+...  Input_Ida=//input[@type="search"][@id="autocomplete"]
+...  Input_Volta=//input[@type="search"][@id="autocomplete2"] 
 ...  Input_DataIda=(//input[@id="departure"])[1]
 ...  Input_DataVolta=(//input[@id="return"])[1]
 ...  A_PassageirosDrop=//a[@href="#"]
 ...  Div_QtdPassageiros=(//div[@class="qtyInc"])[1]
 ...  Button_PesquisarVoo=//button[@id="flights-search"]
+...  Input_origem=//*[@id="onereturn"]/div[1]/div/div[1]/div/div/div/div/div[1]/div[1]/strong
+...  Input_destino=//*[@id="onereturn"]/div[1]/div/div[2]/div/div[2]/div/div/div[1]/div[1]/strong
 #Elementos da pagina resultados do vôo
 ...  Button_PrimeiraOpcao=(//button[@class="btn btn-primary btn-block theme-search-results-item-price-btn ladda waves-effect"])[1]
 #Página reserva do Vôo 

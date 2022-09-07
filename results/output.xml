@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on linux)" generated="20220803 11:18:13.978" rpa="false" schemaversion="3">
+<suite id="s1" name="TC01" source="/home/carolina/Documentos/estudo/projeto_robot_framework/projeto_robot_framework_com_ci/Tests/Voo/TC01.robot">
+<test id="s1-t1" name="TC01 - Reservando passagem de destinos dentro dos EUA na classe econômica" line="6">
+<kw name="Dado que eu acesse o php travels" library="Login_Steps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220803 11:18:14.269" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/'.</msg>
+<msg timestamp="20220803 11:18:37.673" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: window was already closed
+  (Session info: chrome=103.0.5060.134)
+Stacktrace:
+#0 0x55d2b0cc2cd3 &lt;unknown&gt;
+#1 0x55d2b0aca968 &lt;unknown&gt;
+#2 0x55d2b0abb114 &lt;unknown&gt;
+#3 0x55d2b0abc4d2 &lt;unknown&gt;
+#4 0x55d2b0ab4756 &lt;unknown&gt;
+#5 0x55d2b0acbd52 &lt;unknown&gt;
+#6 0x55d2b0b32521 &lt;unknown&gt;
+#7 0x55d2b0b1faa3 &lt;unknown&gt;
+#8 0x55d2b0af53fa &lt;unknown&gt;
+#9 0x55d2b0af6555 &lt;unknown&gt;
+#10 0x55d2b0d0a2bd &lt;unknown&gt;
+#11 0x55d2b0d0e418 &lt;unknown&gt;
+#12 0x55d2b0cf436e &lt;unknown&gt;
+#13 0x55d2b0d0f078 &lt;unknown&gt;
+#14 0x55d2b0ce8bb0 &lt;unknown&gt;
+#15 0x55d2b0d2bd58 &lt;unknown&gt;
+#16 0x55d2b0d2bed8 &lt;unknown&gt;
+#17 0x55d2b0d45cfd &lt;unknown&gt;
+#18 0x7f1d6da3eb43 &lt;unknown&gt;
+</msg>
+<msg timestamp="20220803 11:18:37.676" level="FAIL">WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=103.0.5060.134)
+Stacktrace:
+#0 0x55d2b0cc2cd3 &lt;unknown&gt;
+#1 0x55d2b0aca968 &lt;unknown&gt;
+#2 0x55d2b0ab78e5 &lt;unknown&gt;
+#3 0x55d2b0ab7345 &lt;unknown&gt;
+#4 0x55d2b0ab6795 &lt;unknown&gt;
+#5 0x55d2b0ab545f &lt;unknown&gt;
+#6 0x55d2b0ab5a1c &lt;unknown&gt;
+#7 0x55d2b0ac43c5 &lt;unknown&gt;
+#8 0x55d2b0ab7096 &lt;unknown&gt;
+#9 0x55d2b0ab8032 &lt;unknown&gt;
+#10 0x55d2b0ab7362 &lt;unknown&gt;
+#11 0x55d2b0ab6795 &lt;unknown&gt;
+#12 0x55d2b0ab545f &lt;unknown&gt;
+#13 0x55d2b0ab58c2 &lt;unknown&gt;
+#14 0x55d2b0acc3c2 &lt;unknown&gt;
+#15 0x55d2b0b3360f &lt;unknown&gt;
+#16 0x55d2b0b1fbb2 &lt;unknown&gt;
+#17 0x55d2b0b32ea8 &lt;unknown&gt;
+#18 0x55d2b0b1faa3 &lt;unknown&gt;
+#19 0x55d2b0af53fa &lt;unknown&gt;
+#20 0x55d2b0af6555 &lt;unknown&gt;
+#21 0x55d2b0d0a2bd &lt;unknown&gt;
+#22 0x55d2b0d0e418 &lt;unknown&gt;
+#23 0x55d2b0cf436e &lt;unknown&gt;
+#24 0x55d2b0d0f078 &lt;unknown&gt;
+#25 0x55d2b0ce8bb0 &lt;unknown&gt;
+#26 0x55d2b0d2bd58 &lt;unknown&gt;
+#27 0x55d2b0d2bed8 &lt;unknown&gt;
+#28 0x55d2b0d45cfd &lt;unknown&gt;
+#29 0x7f1d6da3eb43 &lt;unknown&gt;
+</msg>
+<status status="FAIL" starttime="20220803 11:18:14.268" endtime="20220803 11:18:37.678"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20220803 11:18:37.679" endtime="20220803 11:18:37.679"/>
+</kw>
+<status status="FAIL" starttime="20220803 11:18:14.267" endtime="20220803 11:18:37.680"/>
+</kw>
+<kw name="E realize o cadastro" library="Login_Steps">
+<status status="NOT RUN" starttime="20220803 11:18:37.680" endtime="20220803 11:18:37.680"/>
+</kw>
+<kw name="E faça o Login" library="Login_Steps">
+<status status="NOT RUN" starttime="20220803 11:18:37.680" endtime="20220803 11:18:37.680"/>
+</kw>
+<kw name="Quando eu realizo uma busca de um vôo ida e volta" library="Voo_Steps">
+<status status="NOT RUN" starttime="20220803 11:18:37.681" endtime="20220803 11:18:37.681"/>
+</kw>
+<status status="FAIL" starttime="20220803 11:18:14.265" endtime="20220803 11:18:37.684">WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=103.0.5060.134)
+Stacktrace:
+#0 0x55d2b0cc2cd3 &lt;unknown&gt;
+#1 0x55d2b0aca968 &lt;unknown&gt;
+#2 0x55d2b0ab78e5 &lt;unknown&gt;
+#3 0x55d2b0ab7345 &lt;unknown&gt;
+#4 0x55d2b0ab6795 &lt;unknown&gt;
+#5 0x55d2b0ab545f &lt;unknown&gt;
+#6 0x55d2b0ab5a1c &lt;unknown&gt;
+#7 0x55d2b0ac43c5 &lt;unknown&gt;
+#8 0x55d2b0ab7096 &lt;unknown&gt;
+#9 0x55d2b0ab8032 &lt;unknown&gt;
+#10 0x55d2b0ab7362 &lt;unknown&gt;
+#11 0x55d2b0ab6795 &lt;unknown&gt;
+#12 0x55d2b0ab545f &lt;unknown&gt;
+#13 0x55d2b0ab58c2 &lt;unknown&gt;
+#14 0x55d2b0acc3c2 &lt;unknown&gt;
+#15 0x55d2b0b3360f &lt;unknown&gt;
+#16 0x55d2b0b1fbb2 &lt;unknown&gt;
+#17 0x55d2b0b32ea8 &lt;unknown&gt;
+#18 0x55d2b0b1faa3 &lt;unknown&gt;
+#19 0x55d2b0af53fa &lt;unknown&gt;
+#20 0x55d2b0af6555 &lt;unknown&gt;
+#21 0x55d2b0d0a2bd &lt;unknown&gt;
+#22 0x55d2b0d0e418 &lt;unknown&gt;
+#23 0x55d2b0cf436e &lt;unknown&gt;
+#24 0x55d2b0d0f078 &lt;unknown&gt;
+#25 0x55d2b0ce8bb0 &lt;unknown&gt;
+#26 0x55d2b0d2bd58 &lt;unknown&gt;
+#27 0x55d2b0d2bed8 &lt;unknown&gt;
+#28 0x55d2b0d45cfd &lt;unknown&gt;
+#29 0x7f1d6da3eb43 &lt;unknown&gt;
+</status>
+</test>
+<status status="FAIL" starttime="20220803 11:18:13.982" endtime="20220803 11:18:37.688"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC01">TC01</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220803 11:18:37.673" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: window was already closed
+  (Session info: chrome=103.0.5060.134)
+Stacktrace:
+#0 0x55d2b0cc2cd3 &lt;unknown&gt;
+#1 0x55d2b0aca968 &lt;unknown&gt;
+#2 0x55d2b0abb114 &lt;unknown&gt;
+#3 0x55d2b0abc4d2 &lt;unknown&gt;
+#4 0x55d2b0ab4756 &lt;unknown&gt;
+#5 0x55d2b0acbd52 &lt;unknown&gt;
+#6 0x55d2b0b32521 &lt;unknown&gt;
+#7 0x55d2b0b1faa3 &lt;unknown&gt;
+#8 0x55d2b0af53fa &lt;unknown&gt;
+#9 0x55d2b0af6555 &lt;unknown&gt;
+#10 0x55d2b0d0a2bd &lt;unknown&gt;
+#11 0x55d2b0d0e418 &lt;unknown&gt;
+#12 0x55d2b0cf436e &lt;unknown&gt;
+#13 0x55d2b0d0f078 &lt;unknown&gt;
+#14 0x55d2b0ce8bb0 &lt;unknown&gt;
+#15 0x55d2b0d2bd58 &lt;unknown&gt;
+#16 0x55d2b0d2bed8 &lt;unknown&gt;
+#17 0x55d2b0d45cfd &lt;unknown&gt;
+#18 0x7f1d6da3eb43 &lt;unknown&gt;
+</msg>
+</errors>
+</robot>

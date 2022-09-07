@@ -7,7 +7,7 @@ TC01 - Reservando passagem de destinos dentro dos EUA na classe econômica
     Dado que eu acesse o php travels
     E realize o cadastro 
     E faça o Login
-    #Quando eu realizo uma busca de um vôo ida e volta
+    Quando eu realizo uma busca de um vôo ida e volta
     #E saindo de Los Angeles EUA
     #E indo para 
     #E saindo na data
@@ -18,4 +18,4 @@ TC01 - Reservando passagem de destinos dentro dos EUA na classe econômica
     #E preencho os dados de pagamento
     #E clico em confirmar
     #Então a página de confirmação de viagem é exibida
-    E fecho o navegador
+    #E fecho o navegador

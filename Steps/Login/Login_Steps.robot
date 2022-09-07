@@ -8,7 +8,7 @@ Resource  ../../Elements/Main_Elements.resource
 
 
 Dado que eu acesse o php travels
-    Open Browser  ${URL}  ${Browser}
+    Open Browser   about:blank   ${URL}  ${Browser}
     Maximize Browser Window
 
 E realize o cadastro
@@ -34,8 +34,8 @@ E realize o cadastro
     Click Element                      ${Login.Button_Signup}
 
 E faça o Login
-    Wait Until Element Is Visible  ${Login.A_OpcaoLogin}      15
-    Click Element                  ${Login.A_OpcaoLogin} 
+    #Wait Until Element Is Visible  ${Login.A_OpcaoLogin}      15
+    #Click Element                  ${Login.A_OpcaoLogin} 
     Wait Until Element Is Visible  ${Login.Input_EmailLogin}  15
     Input Text                     ${Login.Input_EmailLogin}  ${Email}
     Wait Until Element Is Visible  ${Login.Input_SenhaLogin}  15
@@ -45,5 +45,5 @@ E faça o Login
     Wait Until Element Is Visible  ${Login.Button_Logar}      15
     Click Element                  ${Login.Button_Logar} 
 
-E fecho o navegador
-    Close Browser
+#E fecho o navegador
+    #Close Browser
