@@ -31,14 +31,18 @@ Preencher campos de Textarea practice
     Input Text           ${textarea_Address}             teste teste teste
     
 Preencher campos de Radio Button practice
-    page should contain radio button                 name:optionsRadios
-    page should not contain radio button             name:optionsRadios123'
-    radio button should not be selected              optionsRadios
-    select radio button    optionsRadios             FeMale
-    select radio button    optionsRadios              Male
-    radio button should be set to    optionsRadios    FeMale
+   page should contain radio button                  name:optionsRadios
+   radio button should not be selected               optionsRadios
+   select radio button    optionsRadios              option1
+   radio button should be set to    optionsRadios    option1
 
 Preencher campos de CheckBox practice
+    Select CheckBox                   id:monday
+    Select CheckBox                   id:wednesday
+    Select CheckBox                   id:friday
+    Checkbox Should Be Selected       id:monday
+    Checkbox Should Be Selected       id:wednesday
+    Checkbox Should Be Selected       id:friday
             
 Clicar no botao submit
     Click Element        ${btn_Submit}  
@@ -49,21 +53,8 @@ Fechar navegador
     Close Browser
 
 *** Test Cases ***
-CT001: Preencher formulário itera-qa.azurewebsites.net
-    
-    Abrir navegador e acessar site itera-qa.azurewebsites.net
-    Preencher campos de Textarea practice
-    Clicar no botao submit
-    Fechar navegador
 
-CT002: Preencher campos de Radio Button practice
-    Abrir navegador e acessar site itera-qa.azurewebsites.net
-    Preencher campos de Textarea practice
-    Clicar no botao submit
-    Preencher campos de Radio Button practice
-    Fechar navegador
-
-CT003: Preencher campos de CheckBox practice
+CT001: Preencher campos de CheckBox practice
     Abrir navegador e acessar site itera-qa.azurewebsites.net
     Preencher campos de Textarea practice
     Clicar no botao submit

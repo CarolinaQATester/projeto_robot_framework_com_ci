@@ -16,6 +16,7 @@ ${check_monday}                    id:monday
 ${check_wednesday}                 id:wednesday
 ${check_friday}                    id:friday
 ${select_custom_select}            class:custom-select   
+${btn_input-group-text}            id:inputGroupFile02
 
 
 *** Keywords ***
@@ -55,6 +56,9 @@ Deve selecionar um elemento DropDown pratice
     List Selection Should Be     ${select_custom_select}     Norway
     select from list by value    ${select_custom_select}     5
 
+Deve fazer upload 
+    Click Element      ${btn_input-group-text}
+
 Clicar no botao submit
     Click Element        ${btn_Submit}
 
@@ -65,11 +69,12 @@ Fechar navegador
 
 *** Test Cases ***
 
-CT001: Deve selecionar um elemento DropDown pratice
+CT001: Deve fazer upload 
        Abrir navegador e acessar site itera-qa.azurewebsites.net
        Deve preencher campos de Textarea practice
        Clicar no botao submit
        Deve selecionar campos de Radio Button practice
        Deve selecionar campos de CheckBox practice
        Deve selecionar um elemento DropDown pratice
+       Deve fazer upload 
        Fechar navegador

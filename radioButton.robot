@@ -21,7 +21,8 @@ Abrir navegador e acessar site itera-qa.azurewebsites.net
     Open Browser     ${URL}          ${Browser}
     Maximize Browser Window
     Delete All Cookies
-    Set Selenium Speed  1seconds
+    #Set Selenium Speed  1seconds
+    Set Selenium Implicit Wait      10seconds
 
 Preencher campos de Textarea practice
     Input Text           ${input_Name}                   teste robot
@@ -29,16 +30,13 @@ Preencher campos de Textarea practice
     Input Text           ${input_Email_address}          test@teste.com
     Input Text           ${input_Password}               pw123456              
     Input Text           ${textarea_Address}             teste teste teste
+
 Preencher campos de Radio Button practice
-    page should contain radio button                 name:optionsRadios
-    page should not contain radio button             name:optionsRadios123'
-    radio button should not be selected              optionsRadios
-    select radio button    optionsRadios             FeMale
-    select radio button    optionsRadios              Male
-    radio button should be set to    optionsRadios    FeMale
+   page should contain radio button                  name:optionsRadios
+   radio button should not be selected               optionsRadios
+   select radio button    optionsRadios              option1
+   radio button should be set to    optionsRadios    option1
 
-
-            
 Clicar no botao submit
     Click Element        ${btn_Submit}  
 
@@ -48,14 +46,8 @@ Fechar navegador
     Close Browser
 
 *** Test Cases ***
-CT001: Preencher formulário itera-qa.azurewebsites.net
-    
-    Abrir navegador e acessar site itera-qa.azurewebsites.net
-    Preencher campos de Textarea practice
-    Clicar no botao submit
-    Fechar navegador
 
-CT002: Preencher campos de Radio Button practice
+CT001: Preencher campos de Radio Button practice
     Abrir navegador e acessar site itera-qa.azurewebsites.net
     Preencher campos de Textarea practice
     Clicar no botao submit
