@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20230413 14:16:54.379" schemaversion="2" generator="Robot 4.1.3 (Python 2.7.17 on linux2)">
+<suite source="/home/carolina/Documentos/TesteSoftware/projeto_robot_framework_com_ci/estrutura.robot" id="s1" name="Estrutura">
+<test id="s1-t1" name="CT001: Acessando o site do Robot">
+<kw name="Abrir navegador e acessar site">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230413 14:16:54.496" level="INFO">Opening browser 'chrome' to base url 'https://robotframework.org/'.</msg>
+<status status="PASS" endtime="20230413 14:17:11.446" starttime="20230413 14:16:54.496"/>
+</kw>
+<status status="PASS" endtime="20230413 14:17:11.449" starttime="20230413 14:16:54.495"/>
+</kw>
+<kw name="Fechar navegador">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20230413 14:17:11.578" starttime="20230413 14:17:11.458"/>
+</kw>
+<status status="PASS" endtime="20230413 14:17:11.578" starttime="20230413 14:17:11.454"/>
+</kw>
+<status status="PASS" endtime="20230413 14:17:11.578" starttime="20230413 14:16:54.493"/>
+</test>
+<status status="PASS" endtime="20230413 14:17:11.580" starttime="20230413 14:16:54.381"/>
+</suite>
+<statistics>
+<total>
+<stat fail="0" skip="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" skip="0" id="s1" name="Estrutura" pass="1">Estrutura</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
